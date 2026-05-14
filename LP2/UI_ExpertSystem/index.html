@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital Expert System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Hospital Expert System</h1>
+        <p>AI Based Medical Diagnosis System</p>
+    </div>
+
+    <div class="form">
+
+        <label>
+            <input type="checkbox" id="fever">
+            Fever
+        </label>
+
+        <label>
+            <input type="checkbox" id="cough">
+            Cough
+        </label>
+
+        <label>
+            <input type="checkbox" id="headache">
+            Headache
+        </label>
+
+        <label>
+            <input type="checkbox" id="stomach">
+            Stomach Pain
+        </label>
+
+        <label>
+            <input type="checkbox" id="bodyPain">
+            Body Pain
+        </label>
+
+        <label>
+            <input type="checkbox" id="cold">
+            Cold
+        </label>
+
+        <label>
+            <input type="checkbox" id="vomiting">
+            Vomiting
+        </label>
+
+        <label>
+            <input type="checkbox" id="tiredness">
+            Tiredness
+        </label>
+
+        <button onclick="checkDisease()">
+            Generate Medical Report
+        </button>
+
+    </div>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
