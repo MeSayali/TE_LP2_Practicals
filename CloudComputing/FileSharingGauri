@@ -1,0 +1,19 @@
+Create a Vnet
+Create 2 VMs with both public IPs in same VM.
+ssh -i GauriSw1109.pem GauriSw1109@10.0.0.5
+Chmod 400 GauriSw1109.pem
+
+ echo "hello pict VM1”>test.txt
+
+
+
+
+From your Mac terminal, copy the VM3 PEM file into VM1:
+
+scp -i VM1_key.pem VM3_key.pem GauriSw1109@40.82.137.30:/home/GauriSw1109/
+
+
+In VM1: scp -i VM3_key.pem test.txt azureuser@20.196.65.5:/home/azureuser/
+
+In Vm3: ssh -i vm3_key.pem azureuser@20.196.65.5
+Ls
