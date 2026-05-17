@@ -11,3 +11,18 @@ Ecommerce:
 ```
 https://github.com/sanskruti885/E_commerce_website
 ```
+
+Event Registration:
+```
+https://github.com/GauriWagh1109/EventRegistration-System
+```
+
+Blog App:
+```
+https://github.com/MeSayali/blog-app
+```
+
+Student Management:
+```
+https://github.com/MeSayali/student-management-system
+```
