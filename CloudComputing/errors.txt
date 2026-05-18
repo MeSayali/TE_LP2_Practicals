@@ -1,0 +1,41 @@
+Errors:
+
+You have a conflict with old Ubuntu Node packages (libnode-dev).
+Fix it using these commands:
+sudo apt remove -y nodejs libnode-dev libnode72 npm
+sudo apt autoremove -y
+Then reinstall Node 20:
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install -y nodejs
+Verify:
+node -v
+npm -v
+You should now see:
+v20.x.x
+Then restart backend:
+pm2 delete backend
+pm2 start server.js --name backend
+pm2 save
+Check:
+pm2 list
+It should become online. 
+ 
+If You Want to REMOVE Old Project Completely
+Then do:
+________________________________________
+Stop PM2 Process
+pm2 delete backend
+________________________________________
+Remove Old Nginx Config
+Check enabled configs:
+ls /etc/nginx/sites-enabled
+Delete old one:
+sudo rm /etc/nginx/sites-enabled/app
+sudo rm /etc/nginx/sites-available/app
+Restart nginx:
+sudo systemctl restart nginx
+________________________________________
+Delete Old Project Files
+rm -rf ~/E_commerce_website
+________________________________________
+
